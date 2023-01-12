@@ -7,7 +7,7 @@ my_dag = DAG(
     dag_id='my_second_dag',
     description='A DAG with two tasks',
     tags=['tutorial', 'datascientest'],
-    schedule=None,
+    schedule_interval=None,
     default_args={
         'owner': 'airflow',
         'start_date': days_ago(2),
