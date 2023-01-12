@@ -2,6 +2,7 @@ from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.operators.python import PythonOperator
 import datetime
+import time
 
 my_dag = DAG(
     dag_id='my_second_dag_depencies',
@@ -23,6 +24,7 @@ def print_hello_task_1():
 
 
 def print_hello_task_2():
+    time.sleep(30)
     print(datetime.datetime.now())
     print('Hello from task 2')
 
