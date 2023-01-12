@@ -19,7 +19,7 @@ my_dag = DAG(
 
 
 def print_hello_task_1():
-    time.sleep(30)
+    raise TypeError('This will not work')
     print(datetime.datetime.now())
     print('Hello from task 1')
 
