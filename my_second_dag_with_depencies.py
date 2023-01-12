@@ -19,12 +19,12 @@ my_dag = DAG(
 
 
 def print_hello_task_1():
+    time.sleep(30)
     print(datetime.datetime.now())
     print('Hello from task 1')
 
 
 def print_hello_task_2():
-    time.sleep(30)
     print(datetime.datetime.now())
     print('Hello from task 2')
 
