@@ -4,8 +4,8 @@ from airflow.operators.python import PythonOperator
 import datetime
 
 my_dag = DAG(
-    dag_id='vestir_calcas',
-    description='A DAG with two tasks',
+    dag_id='my_dag_of_the_morning',
+    description='My DAG to know what to do in the morning',
     tags=['tutorial', 'datascientest'],
     schedule_interval=None,
     default_args={
